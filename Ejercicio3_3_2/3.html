@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3: ordenamiento</title>
+    <link rel="stylesheet" href="CSS/style2.css">
+    <script src="js/3.js"></script>
+</head>
+<body>
+    <!--3. Realice un programa que lea un arreglo de 10 números, seleccione el tipo de
+ordenamiento y los muestre ordenados.-->
+<h2>Ordenamiento de números</h2>
+<form action="#" method="post">
+    <div class="filaUno">
+        <input type = "number"id="n1" class="field" placeholder="Ingresa un número"> <br><br>
+        <input type = "number" id="n2" class="field" placeholder="Ingresa un número"> <br><br>
+    </div>
+    <div class="filaDos">
+        <input type = "number" id="n3" class="field" placeholder="Ingresa un número"> <br><br>
+        <input type = "number" id="n4" class="field" placeholder="Ingresa un número"> <br><br>
+    </div>
+    <div class="filaTres">
+        <input type = "number" id="n5" class="field" placeholder="Ingresa un número"> <br><br>
+        <input type = "number" id="n6" class="field" placeholder="Ingresa un número"> <br><br>
+    </div>
+    <div class="filaCuatro">
+        <input type = "number" id="n7" class="field" placeholder="Ingresa un número"> <br><br>
+        <input type = "number" id="n8" class="field" placeholder="Ingresa un número"> <br><br>
+    </div>
+    <div class="filaCinco">
+        <input type = "number" id="n9" class="field" placeholder="Ingresa un número"> <br><br>
+        <input type = "number" id="n10" class="field" placeholder="Ingresa un número"><br><br>
+    </div>
+    
+        <h4>Tipo de ordenamiento:</h4>
+	<select id="tipoOrdenamiento">
+		<option value="ascendiente">Ascendiente</option>
+		<option value="descendiente">Descendiente</option>
+	</select>
+    <input type="button" class="btn" value = "Ordenar" onclick="ordenamiento()">
+    <input type="reset" class = "btn "value="Borrar" onclick="Limpiar()">
+    <p>Números ordenados:</p>
+	<div id="ordenado"></div>
+</form>
+</body>
+</html>

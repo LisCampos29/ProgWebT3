@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <style>
+        @import url('Style.css');
+    </style>
+
+    <title>Eventos</title>
+</head>
+<body>
+    <h4>Manejador de Eventos de DOM</h4>
+    <script>
+        var miDiv;
+        miDiv = document.getElementById("Principal");
+        
+        function miMensaje3() 
+        {
+            console.log("Has pulsado un botón del ratón");
+        }
+        miDiv.addEventListener("click", miMensaje3, false);
+        // Después ya no se necesita manejar el evento:
+        miDiv.removeEventListener("click", miMensaje3, false);
+    </script>
+
+    <br><b>Asociar multiples funciones a un evento único</b>
+    <script>
+        function miMensaje4() 
+        {
+            console.log("Has hecho clic con el ratón");
+        }
+        function suMensaje() 
+        {
+            console.log("Has hecho clic el ratón y ejecuta otra función");
+        }
+        var miDiv = document.getElementById("miDiv");
+        miDiv.addEventListener("click", miMensaje4, true);
+        miDiv.addEventListener("click", suMensaje, true);
+    </script>
+</body>
+</html>

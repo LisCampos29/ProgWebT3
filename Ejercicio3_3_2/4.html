@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4: Fechas</title>
+    <link rel="stylesheet" href="CSS/style3.css">
+    <script src="js/4.js"></script>
+</head>
+<body>
+    <!--4. Haga un programa que lea cuatro fechas y muestre cuál de ellas es mayor.-->
+    <h2>Escoja diferentes fechas</h2>
+    <form action="#" method="post">
+        <div class="filaUno">
+            <label for="Fecha1">Fecha 1: </label><br>
+            <input type="date" id="Fecha1">
+            <label for="Fecha2">Fecha 2: </label>
+            <input type="date" id="Fecha2">
+        </div>
+        <div class="filaDos">
+            <label for="Fecha3">Fecha 3: </label>
+            <input type="date" id="Fecha3">
+            <label for="Fecha4">Fecha 4: </label>
+            <input type="date" id="Fecha4">
+        </div> <br>
+        <input type="button" class = "btn" value="Calcular fecha mayor" onclick="calcularFecha()">
+        <input type="reset"  class = "btn" value="Limpiar" onclick="Limpiar()">
+        
+        <p>La fecha mayor es: </p>
+        <div id="resultado" class="result"></div>
+    </form>    
+</body>
+</html>

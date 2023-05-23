@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <style>
+        @import url('Style.css');
+    </style>
+    <title>Ejemplos de JavaScript</title>
+</head>
+<body>
+    <h3>Ejemplos de JavaScript</h3>
+    <h4>Sintaxis</h4>
+    <p id="Parrafo1"></p>
+    <p id="Parrafo2"></p>
+    <p id="Parrafo3"></p>
+    
+    <script>
+       document.getElementById("Parrafo1").innerHTML = "En un lugar de la mancha";
+       document.getElementById("Parrafo2").innerHTML = "De cuyo lugar";
+       document.getElementById("Parrafo3").innerHTML = "No quiero acordarme";
+    </script>
+
+    <h4>Variables</h4>
+    <p id="miVariable"> </p>
+    <script>
+       var a = 16; // Declaración de variables
+       var b = 13;
+       var c = a + b;
+       document.getElementById("miVariable").innerHTML = "La suma en la variable c es: " + c;
+    </script>
+
+    <h4>Operadores</h4>
+    <p id="suma"></p>
+    <p id="resta"></p>
+    <p id="multiplicacion"></p>
+    <p id="division"> </p>
+    
+    <script>
+       var a = 15; // Se asignan las constantes a las variables.
+       var b = 13;
+       var c = a + b; // Se suman los dos valores.
+       document.getElementById("suma").innerHTML = "La suma de <b>a</b> y <b>b</b> es: " + c;
+       
+       var c = a - b; // // Se suman los dos valores.
+       document.getElementById("resta").innerHTML = "La resta de <b>a</b> y <b>b</b> es: " + c;
+       
+       var c = a * b; // // Se multiplican los dos valores. 
+       document.getElementById("multiplicacion").innerHTML = " Multiplicación de <b>a</b> y <b>b</b> es: " + c; 
+      
+       var c = a / b; // // Se divide a entre b.
+       document.getElementById("division").innerHTML = " La División de <b> a</b> y <b>b</b> es: " + c;
+    </script>
+
+    <h4>Tipo de Datos</h4>
+    <script>
+        var a; // "a" No tiene valor.
+        var b = 0; // "b" es un Núumero.
+        var a = "Soy una cadena."; //"a" Ahora es una cadena.
+    </script>
+
+    <h4>Funciones</h4>
+    <script>
+        function saludos() 
+        { 
+            document.getElementById("resultado").innerHTML = "Hola a todos";
+        }
+    </script>
+    <button onclick="saludos()">
+        Haz click aquí!
+    </button>
+    <p id="resultado"> </p>
+
+    <h4>Ambito de Variables</h4>
+    <p>Aquí se explican las diferencias entre variables globales y lcales. </p>
+    
+    <h2>Una variable local cuando se accede globalmente</h2>
+    <p id="variableLocalGlobal"></p>
+    
+    <h2>Variable Local cuando se accede localmente</h2>
+    <p id="variableLocalLocal"></p>
+    
+    <h2>Variable Global cuando se accede localmente</h2>
+    <p id="variableGloballocal"></p>
+    <h2>variable Global cuando se accede globalmente</h2>
+    
+    <script>
+       var animal = "León"; // se declara e inicializa una variable cadena.
+       unaFuncion();
+       //Aquí no esta definida la variable fruta
+       document.getElementById("variableLocalGlobal").innerHTML = "Se llama una variable definida en unaFuncion(): El tipo de fruta es " + typeof fruta;
+       //Sí está definida la variable animal
+       document.getElementById("variableGlobalGlobal").innerHTML = "Se llama la variable global. El tipo de animal es " + animal;
+       function unaFuncion() 
+       {
+        var fruta = "Manzana";
+        //Aquí sí está definida la variable fruta, pero es local
+        document.getElementById("variableLocalLocal").innerHTML = "En la llamada dentro de la función unaFuncion(), el tipo de fruta es " + fruta;
+        //La variable animal no está definida aquí pero sí globalmente
+        document.getElementById("variableGloballocal").innerHTML = "En la llamada dentro de la función unaFuncion() , el tipo de animal es " + animal; 
+        }
+    </script>
+
+    <h4>Cadenas</h4>
+    <p>La longitud de la variable "txt" es: </p>
+    <p id="longitud"></p>
+    <p>Los caracteres especiales se ven así: </p>
+    <p id="caracterEspecial"></p>
+    <p>Elementos todo el arreglo: </p>
+    <p id="arreglo"></p>
+    <p>Un elemento del arreglo: </p>
+    <p id="elemento"></p>
+    <p>El método de JavaScript "toString()" regresa una cadena separando cada elemento con coma ,. </p>
+    <p id="convertirArreglo"></p>
+    
+    <script> 
+       var txt = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+       document.getElementById("longitud").innerHTML = txt.length;
+       var x = 'ta\' bueno.';
+      
+       var y = "Los caracteres especiales llevan \\\ \"caracter especial\" en el código.";
+       document.getElementById("caracterEspecial").innerHTML = x + "<br>" + y;
+       // Declaración e inicialización de un arreglo.
+      
+       var animales = ["Perro", "Gato", "León"];
+       document.getElementById("arreglo").innerHTML = animales;
+       document.getElementById("elemento").innerHTML = animales[2];
+      
+       var animales = ["Perro", "Gato", "León", "Aguila"];
+       document.getElementById("convertirArreglo").innerHTML =
+       animales.toString();
+    </script>
+
+    <br><b>Mejoras con Botón</b>
+    <p>EL Método "pop()" de JavaScript elimina el último elemento del arreglo.</p>
+    <p>EL Método "push()" de JavaScript añade un elemento del arreglo en la última posición.</p>
+    <button onclick="funcionPop()">Haz click para eliminar el último elemento </button>
+    <button onclick="funcionPush()">Haz click para añadir otro elemento </button>
+    <p id="datos"></p>
+    <script>
+        var animales = ["Perro", "Gato", "Cebra", "Tigre"];
+        document.getElementById("datos").innerHTML = animales;
+        // Función para eliminar un elemento.
+        function funcionPop() 
+        {
+           animales.pop(); // Llamar a pop.
+           document.getElementById("datos").innerHTML = animales;
+        }
+        function funcionPush() 
+        {
+           animales.push("Venado"); //Llamar a push
+           document.getElementById("datos").innerHTML = animales;
+        }
+    </script>
+</body>
+</html>

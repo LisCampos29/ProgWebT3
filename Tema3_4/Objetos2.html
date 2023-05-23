@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<head>
+</head>
+<body>
+    
+    <script>
+        ////////////////////////////////////Representacion de objetos////////////////////////////////////////
+
+
+        var objecto = new Object();
+        objecto.propiedad = "Mi valor";
+        objecto.holaFuncion = function()
+        {
+            
+        }
+        console.log("Hola a todos, este es el ejemplo 1 de objeto");
+        
+        var objeto = {};
+        objeto.propiedad = "Mi valor";
+        objeto.holaFuncion = function() { 
+
+        }
+        console.log("Hola a todos, este es el ejemplo 2 de objetos!");
+
+        var objeto = {
+        "propiedad" : "bar",
+        "holaFuncion" : function() {  }
+        };
+        console.log("Hola a todos!, este es el ejemplo 3 de objetos!");
+
+        var vuelo = {
+        aerolinea: "Airlines",
+        numero: 811,
+        partida: {
+        clave: "SID",
+        fechaHora: "2021-09-22 14:55",
+        ciudad: "Sidney"
+        },
+        llegada: {
+        clave: "LA",
+        fechaHora: "2021-09-23 10:42",
+        ciudad: "Los Angeles"
+        }
+    };
+ 
+    console.log("Vuelo: ", vuelo);
+    vuelo.claveAvion="777";
+    vuelo.estado="En tierra";
+    console.log("Estado de vuelo: ", vuelo.estado);
+
+    /////////////////////////////////////////Acceso a objetos/////////////////////////////////////////////
+
+    var personas = {
+    usuario: ["Jessica", "Liset", "Sandra"],
+    profesion: {
+        Jessica: "Ingeniera de Software",
+        Liset: "Diseñadora grafica",
+        Sandra: "Escritora tecnica",
+  },
+};
+console.log(personas.usuarios);
+console.log(personas.profesion);
+
+    //////////////////////////////////////////////Modificacion/////////////////////////////////////////////
+    personas.profesion.Liset="Programadora";
+    console.log("La profesion de liset ha sido cambiada a : ",personas.profesion.Liset);
+
+    //////////////////////////////////////////////Eliminacion//////////////////////////////////////////////
+    delete personas.profesion.Liset;
+    console.log("La profesion de Liset ha sido eliminada ",personas.profesion.Liset);
+
+    /////////////////////////////////////////Paso por referencia////////////////////////////////////////////
+    
+   </script>
+</body>

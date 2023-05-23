@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?famiy=Inter:wght@300;600&display=swap");
+
+body{
+    background-color: #FFDAB9 ;
+    justify-content: center;
+}
+h2{
+    text-align: center;
+    letter-spacing: 0.1em;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+form{
+    
+    background-color: white;
+    font-size: 22px;
+    border-radius: 3px;
+    padding: 20px;
+    margin: 0 auto;
+    width: 700px;
+    text-align: center;
+
+}
+
+input{
+    border: 0;
+    outline: none;
+    text-align: center;
+}
+.field{
+    border: solid 1px #ccc;
+    padding: 10px;
+    font-size: 22px;
+    width: 280px;
+}
+.field:focus{
+    border-color: #FFDAB9;
+}
+
+.btn{
+    background-color: #FFE4C4;
+    width: 280px;
+    border: #ccc;
+    border-radius: 3px;
+    font-size: 19px;
+    text-decoration: dashed;
+}
+.center-content{
+    text-align: center;
+}

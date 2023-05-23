@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <style>
+        @import url('Style.css');
+    </style>
+
+    <title>Eventos</title>
+</head>
+<body>
+    <h4>Manejador de Eventos como Funciones Externas</h4>  
+    <script>
+        function miMensaje1() 
+        {
+            alert('Ha hecho clic en el botón');
+        }
+    </script>
+    <input type="button" value=" Haga clic aquí" onclick="miMensaje1()" />
+    <div style="padding: .2em; width: 150px; height: 60px; border: thin solid silver" onmouseover="resalta(this)" onmouseout="resalta(this)"> </div>
+   
+    <script>
+        function resalta(esteElemento) 
+        {
+            switch(esteElemento.style.borderColor) 
+            {
+                case 'silver': //Para Firefox esteElemento.style.borderColor = 'black';
+                break;
+                case 'black':
+                case 'black black black black':
+                case '#000000':esteElemento.style.borderColor = 'silver';
+                break;
+            }
+        }
+    </script>
+</body>
+</html>
+

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <style>
+        @import url('Style.css');
+    </style>
+
+    <title>Eventos</title>
+</head>
+<body>
+    <h4>El Objeto de Event</h4>
+    <script>
+        var miDiv;
+        miDiv = document.getElementById("Principal");
+        
+        function miMensaje3() 
+        {
+            console.log("Has pulsado un botón del ratón");
+        }
+        miDiv.addEventListener("click", miMensaje3, false);
+        // Después ya no se necesita manejar el evento:
+        miDiv.removeEventListener("click", miMensaje3, false);
+        miDiv.onclick = function(evento) 
+        {
+            var miDivEvento = arguments[0];
+        }
+    </script>
+</body>
+</html>

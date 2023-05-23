@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <style>
+        @import url('Style.css');
+    </style>
+
+    <title>Eventos</title>
+</head>
+<body>
+    <h4>La Variable This</h4>
+    <b>Sin Variable This</b>
+    <div id="contenidos" style="width:150px; height:60px; border:thin solid silver" onmouseover="document.getElementById('contenidos').style.borderColor='black';" onmouseout="document.getElementById('contenidos').style.borderColor='silver';"> </div>   
+
+    <br><b>Con Variable This</b>
+    <div id="contenidos" style="width:150px; height:60px; border:thin solid silver" onmouseover="this.style.borderColor='black';" onmouseout="this.style.borderColor='silver';"></div>
+</body>
+</html>

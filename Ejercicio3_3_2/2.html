@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2: 4 inputs</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <script src="js/2.js"></script>
+</head>
+<!--2. Haz un programa que lea cuatro números desde cuatro inputs y muestre cual es el
+mayor poniendo el fondo del input en color verde y los otros en rojo.-->
+<body>
+    <h2>El número mayor</h2>
+    <form action="#" method="post">
+        <label for ="num1">Primer número</label><br><br>
+        <input type="text" id="num1" class="field" placeholder="Ingresa un número"> <br><br>
+        <label for ="num2">Segundo número</label><br><br>
+        <input type="text" id="num2" class="field" placeholder="Ingresa un número"> <br><br>
+        <label for ="num3">Tercer número</label><br><br>
+        <input type="text" id="num3" class="field" placeholder="Ingresa un número"> <br><br>
+        <label for ="num4">Cuarto número</label><br><br>
+        <input type="text" id="num4" class="field" placeholder="Ingresa un número"> <br><br>
+
+        <input type = "button" class="btn" value="Verificar" onclick="numMayor()"> <br><br> 
+        <input type = "Reset" class="btn" value="Borrar datos" onclick="limpiarColor()"> <br><br> 
+    </form>
+</body>
+</html>

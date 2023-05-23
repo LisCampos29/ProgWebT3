@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Poppins:ital,wght@0,300;1,600&display=swap');
+
+body{
+    background-color: #FFDAB9 ;
+    justify-content: center;
+}
+h2{
+    text-align: center;
+    letter-spacing: 0.1em;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+form{
+    background-color: white;
+    font-size: 19px;
+    border-radius: 3px;
+    padding: 20px;
+    margin: 0 auto;
+    width: 430px;
+    text-align: center;
+}
+
+.filaUno{
+    display: flex;
+    padding: 5px;
+    justify-content: center;
+}
+.filaDos{
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+}
+.filaTres{
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+}
+.filaCuatro{
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+}
+.filaCinco{
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+}
+input{
+    border: 0;
+    outline: none;
+    text-align: center;
+}
+.field{
+    border: solid 1px #ccc;
+    padding: 20px;
+    font-size: 15px;
+    width: 150px;
+}
+.field:focus{
+    border-color: #FFDAB9;
+}
+
+.btn{
+    background-color: #FFE4C4;
+    width: 80px;
+    border: #ccc;
+    border-radius: 3px;
+    font-size: 19px;
+    text-decoration: dashed;
+}
+.center-content{
+    text-align: center;
+}
+form > p{
+    background-color: #D8BFD8;
+}
+input[type = "date"]{
+    background-color: #ffebbe;
+    padding: 15px;
+    position: relative;
+
+    background-size: 30px;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 999;
+    border: none;
+    outline: none;
+}
+input:focus{
+    border: 5px solid #FFDAB9;
+}
+::webkit-calendar-picker-indicator{
+    opacity: 0;
+    cursor: pointer;
+    border-radius: 3px;
+}

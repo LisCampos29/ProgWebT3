@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <meta charset="utf8">
+                <title>Condición simple en JavaScript</title>
+        </head>
+    <body>
+            <h3>Resultado:</h3>
+            <p id="condicionalSimple"></p>
+            <p id="sigueElFlujo"></p>
+        <script>
+            /////////////////////////////////////////////////////Condicion simple////////////////////////////////////////////
+            var limiteAprobatorio = 80;
+            if (limiteAprobatorio >= 70) {
+            document.getElementById("condicionalSimple").innerHTML =
+            " El estudiante cumple el límite.";
+        }
+            document.getElementById("sigueElFlujo").innerHTML =
+            " El estudiante hizo la prueba.";
+        </script>
+
+        <h3>Resultado:</h3>
+        <p id="resultado"></p>
+    <script>
+        ///////////////////////////////////////////////////////Condicion multiple////////////////////////////////////////////
+        var numero = 70;
+        switch (numero) {
+        case 70: document.write(
+            "El estudiante aprueba con la mínima de 70");
+        break;
+        case 80: document.write(
+            "el estudiante tiene buena calificación");
+        break;
+        case 90: document.write(
+            "El estudiante tiene muy buena calificación");
+        break;
+        case 100: document.write(
+            "El estudiante tiene excelente calificación.");
+        break;
+        default: document.write(
+            "El estudiante no aprobó.");
+        
+        }
+    </script>
+
+        <h3>Lista de animales:</h3>
+        <p id="listaAnimales"></p>
+    <script>
+        ///////////////////////////////////////////////////////////////////////////Ciclo/////////////////////////////////////////////////////
+        var ArregloAnimales = ["Caballo", "Gato", "Perro", "Elefante", "Tigre"];
+        var texto = ""; // Se inicializa una cadena nula
+            for(var i = 0; i < ArregloAnimales.length; i++)
+        {
+            texto += ArregloAnimales[i] + "<br>";
+            // Se almacena el nombre de cada elemento del arreglo en texto
+        } document.getElementById("listaAnimales").innerHTML = texto
+    </script>
+
+        <h3>Lista de animales:</h3>
+        <p id="listaAnimales">
+        </p>
+        <script>
+        var ArregloAnimales = ["Caballo", "Gato", "Perro", "Elefante","Tigre"];
+        var texto = "";
+        var i = 0;
+        while (i < ArregloAnimales.length) {
+        texto += ArregloAnimales[i] + "<br>";
+        i++;
+        }
+        document.getElementById("listaAnimales").innerHTML = texto;
+        </script>
+        
+    </body>
+</html>

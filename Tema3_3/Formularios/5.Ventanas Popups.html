@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <style>
+        @import url('Style.css');
+    </style>
+
+    <title>Formularios</title>
+</head>
+<body>
+    <h4> Ventanas emergentes de Javascript</h4>
+    <h4>Ventana de confirmación</h4>
+    <button onclick="confirmaFunction()">por favor confirma</button>
+
+    <h4>Ventana emergente de alerta.</h4>
+    <button onclick="alertaFunction()">Ten cuidado!</button>
+    
+    <h4>Ventana emergente de pregunta.</h4>
+    <button onclick="preguntaFunction()">Necesito un dato</button>
+
+    <p id="pregunta"></p>
+    
+    <script>
+    function alertaFunction() 
+    {
+        alert("Ventana emergente de alerta.");
+    }
+    function confirmaFunction() 
+    {
+        confirm("Ejemplo de ventana emergente de confirmación.");
+    }
+    function preguntaFunction() 
+    {
+        var texto;
+        var person = prompt("Por favor introduzca su nombre:","Nombre");
+        if(person == null || person == "") 
+        {
+            texto = "Presionaste el botón de cancelar.";
+        } 
+        else 
+        {
+            texto = "Perfecto " + person + "¡¡Esto es lo que hace la función prompt!!.";
+        }
+        document.getElementById("pregunta").innerHTML = txt;
+    }
+    </script>
+</body>
+</html>
